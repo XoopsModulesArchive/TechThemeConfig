@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: large;
+	font-weight: bold;
+}
+.style4 {
+	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<tr> 
+  <td valign="top" rowspan="2"> 
+<tr> 
+      <td valign="top"> 
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/temp1_01.jpg" width="180" height="114"></td>
+            <td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/temp1_02.jpg" width="100" height="114"></td>
+            <td><div align="center"><span class="style1"><{$show_sitename}></span> <br>
+                  <span class="style4"><{$show_siteslogan}> </span></div></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr> 
+            <td background="<{$xoops_url}>/themes/<{$xoops_theme}>/images/bg_menu.gif" width="180" height="36">&nbsp; </td>
+            <td background="<{$xoops_url}>/themes/<{$xoops_theme}>/images/bg_menu.gif" width="100" height="36" border="0">&nbsp;</td>
+            <td background="<{$xoops_url}>/themes/<{$xoops_theme}>/images/bg_menumid.gif" width="629" height="36" border="0"><div align="center"><{$show_link1}> :: <{$show_link2}> :: <{$show_link3}> :: <{$show_link4}> :: <{$show_link5}> :: <{$show_link6}> </div></td>
+            <td background="<{$xoops_url}>/themes/<{$xoops_theme}>/images/bg_menu.gif" width="100" border="0">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+</tr>
+    <tr> 
+      <td valign="top">&nbsp; </td>
+    </tr>
+    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><div align="center">
+            <strong>
+            <marquee onMouseover="this.scrollAmount=0"
+ onMouseout="this.scrollAmount=3">
+            <font color="#595959"><{$show_scroll1}>
+            </font>
+            </marquee>
+            </strong>          </div></td>
+      </tr>
+    </table>
+    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="16%" height="123"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<{foreach item=block from$xoops_lblocks}>
+			<{include file="TechDigi/theme_blockleft.html"}>
+			<{/foreach}>
+			</td>
+          </tr>
+        </table></td>
+        <td width="68%"><table width="97%" height="28"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="28">&nbsp;</td>
+          </tr>
+        </table>
+          <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><div align="center">
+			  <{foreach item=block from=$xoops_clblocks}>
+			  <{include file="TechDigi/theme_blockcenter_l.html"}>
+			  <{/foreach}>
+			  </div>
+			  </td>
+              <td>
+			  <div align="center">
+			  <{foreach item=block from$xoops_crblocks}>
+			  <{include file="TechDigi/theme_blockcenter_r.html"}>
+			  <{/foreach}>
+			  </div>
+			  </td>
+            </tr>
+          </table>
+		   <{if $xoops_showcblock == 1}>
+          <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><div align="center">
+			  <{foreach item=block from=$xoops_ccblocks}>
+			  <{include file="TechDigi/theme_blockcenter_c.html"}>
+			  <{/foreach}>
+			  </div></td>
+            </tr>
+          </table>
+		  <{/if}>
+          <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><div id="content" align="center"><{$xoops_contents}></div></td>
+            </tr>
+          </table></td>
+		   <{if $xoops_showrblock == 1}>
+        <td width="16%"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<{foreach item=block from=$xoops_rblocks}>
+			<{include file="TechDigi/theme_blockright.html"}>
+			</foreach>
+			</td>
+          </tr>
+        </table></td>
+		<{/if}>
+      </tr>
+    </table>
+    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="28" background="<{$xoops_url}>/themes/<{$xoops_theme}>/images/bg_menu.gif"><div align="center"><{$show_themecopy}></div></td>
+      </tr>
+    </table>
+</body>
+	</html>

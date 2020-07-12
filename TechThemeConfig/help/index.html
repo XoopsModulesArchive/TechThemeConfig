@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>TechThemeConfig version 1.0 FAQ</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #CC3300;
+	font-weight: bold;
+}
+.style2 {color: #CC0000}
+.style3 {color: #FF9900}
+.style4 {color: #00CC00}
+.style5 {color: #0000FF}
+.style7 {color: #CC0000; font-weight: bold; }
+.style9 {color: #0000FF; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body>
+<h3 align="center">TechThemeConfig version 2.0 FAQ </h3>
+<p align="center">&nbsp;</p>
+<p class="style1">I have installed TechThemeConfig, but the links are not showing up.</p>
+<p>- You need to replace www.yoursite.com/header.php with the one you recieved with the TechThemeConfig system.</p>
+<hr>
+<p class="style7">I downloaded a theme but my TechThemeConfig doesn't seem to be working.</p>
+<p>- TechThemeConfig is made to work with Tech themes only. You can find these themes at <a href="http://t-tech.org" target="_new">www.t-tech.org.  </a>Be sure the theme states it is made to run with TechThemeConfig.</p>
+<hr>
+<p class="style7">I want to add a link item that points off my site.</p>
+<p>- In the admin consol, beside each link you will see a drop down menu, select &quot;External Link&quot; then type in the url of the link you wish to add as well as the text to appear for that link. (Be sure to include http://)</p>
+<hr>
+<p class="style7">Does TechThemeConfig support group permissions?</p>
+<p>- Group permissions are set in your xoops admin panel under system admin/groups. The links will be visable to all, but only specified groups will be allowed access. </p>
+<hr>
+<p class="style7">I have set all 10 links but I only see 5.</p>
+<p>- With each Tech theme you should have recieved a &quot;ReadMe&quot; file that states what features of ThemeConfig it will be using, not every theme will use all 10 links. </p>
+<hr>
+<p class="style7">I have set both scrolling texts but I only see one.</p>
+<p>- With each Tech theme you should have recieved a &quot;ReadMe&quot; file that states what features of ThemeConfig it will be using, not every theme will use both scrolls. </p>
+<hr>
+<p class="style7">I want to have a new theme that uses TechThemeConfig, but I don't know how to makes themes.</p>
+<p>- T-Tech Inc. has designers &amp; coders for hier, stop by the site <a href="http://t-tech.org" target="_new">www.t-tech.org</a> and make a request to be contacted. Please be sure to state &quot;For Theme Design&quot; so that the right person(s) contact you. </p>
+<hr>
+<p class="style7">I would like to create my own TechTheme by myself.</p>
+<p>- The list of TechThemeConfig smarty variables is as follows: //TechThemeConfig - New Smarty Vars</p>
+<p>&nbsp;</p>
+<p><span class="style3">//Displays inputted text for scroll 1</span><br>
+&lt;{$show_scroll1}&gt;<br>
+</p>
+<p><span class="style3">//Displays inputted text for scroll 2</span><br>
+&lt;{$show_scroll2}&gt;<br>
+</p>
+<p><span class="style3">//Displays sites name</span><br>
+&lt;{$show_sitename}&gt;<br>
+</p>
+<p><span class="style3">//inserts sites url</span><br>
+&lt;{$show_siteurl}&gt;<br>
+</p>
+<p><span class="style3">//Displays sites slogan</span><br>
+&lt;{$show_siteslogan}&gt;<br>
+</p>
+<p><span class="style3">//Displays theme's copyright</span> <br>
+  <span class="style4">//Note: This MUST be included in your themes footer. </span><br>
+&lt;{$show_themecopy}&gt;<br>
+</p>
+<p class="style3">//&lt;{$show_link(number)}&gt; Inserts link in coded format, </p>
+<p><span class="style5">//Example:</span><br>
+&lt;{$show_link1}&gt; <br>
+  <span class="style3">//Would insert the following</span><br>
+&lt;a href=&quot;$link1_url&quot;&gt;$link1_text&lt;/a&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link1}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link2}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link3}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link4}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link5}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link6}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link7}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link8}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link9}&gt;<br>
+</p>
+<p><span class="style3">//Inserts link in coded format</span><br>
+&lt;{$show_link10}&gt;<br>
+</p>
+<p><span class="style3">//Displays site name</span><br>
+&lt;{$show_sitename}&gt;</p>
+<p><span class="style3">//Displays site slogan</span><br>
+&lt;{$show_siteslogan}&gt;</p>
+<p><span class="style3">//Displays scroll 1 or 2</span><br>
+ &lt;{$show_scroll1}&gt;<br>
+&lt;{$show_scroll2}&gt;</p>
+<p><span class="style4">//Note: Be sure to use the &quot;marquee&quot; tags like so:</span><br>
+ &lt;marquee&gt;&lt;{$show_scroll1}&gt;&lt;/marquee&gt;<br>
+ &lt;marquee&gt;&lt;{$show_scroll2}&gt;&lt;/marquee&gt;</p>
+<hr>
+<p class="style2"><strong>How can I optimize use of the scrolling text feature? .</strong></p>
+<p>- You may add html links to your scrolls. <br> 
+Note: please do so in the following mannor .. <br>
+&lt;a href=\<span class="style9">'</span>http://www.thelink.com\<span class="style9">'</span>&gt;&lt;Link Text&lt;/a&gt; <br>
+Notice we are using <span class="style5"><strong>'</strong></span> rather than <span class="style5"><strong>&quot; </strong></span></p>
+<hr>
+<div align="center"></div>
+<p class="style2"><strong>I have read this whole file and my question(s) have still not been answered.</strong></p>
+<p>- Please visit <a href="http://t-tech.org" target="_new">www.t-tech.org</a> TechThemeConfig forum and post your question(s) and a staff member will respond to you asap. </p>
+<hr>
+<div align="center">TechThemeConfig version 2.0 Copyright &copy; 2004 T-Tech Inc. </div>
+</body>
+</html>

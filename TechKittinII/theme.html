@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script language="JavaScript" type="text/javascript">
+<!-- Begin
+function blockError(){return true;}
+window.onerror = blockError;
+//  End -->
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+       <!--
+       function NewWindow(url, windowName, w, h, scroll) {
+           var winl = (screen.width - w) / 2;
+           var wint = (screen.height - h) / 2;
+           winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+'  --
+		--  ,scrollbars='+scroll+',resizable';
+           win = window.open(url, windowName, winprops);
+           if (parseInt(navigator.appVersion) >= 4) { 
+              	win.window.focus(); 
+           }
+        }
+// -->
+</SCRIPT>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<!-- Start Header -->
+<{include file="TechKittinII/theme_header.html"}>
+<!-- End Header -->
+<!-- Start Headerbar -->
+<!-- End Headerbar -->
+<table width="100%"  cellspacing="3" cellpadding="3" border="0">
+  <tr>
+         <td width="160" valign="top" class="leftcolumn"><div class="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="TechKittinII/theme_leftblock.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+         </div></td>
+         <td width="100%" valign="top">
+
+         <!-- Display center blocks if any -->
+         <div align="center">
+		 <center><{$xoops_banner}></center>
+		 <{if $xoops_showcblock == 1}>
+           <br />
+           <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+    <td width="8"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/sbar_fle.gif" /></td>
+    <td width="31"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/sbar_end.gif" /></td>
+    <td width="100%" background="<{$xoops_url}>/themes/<{$xoops_theme}>/images/sbar_mid.gif" /></td>
+	<td width="31"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/sbar_end.gif" /></td>
+	<td width="8"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/sbar_fre.gif" /></td>
+    </tr>
+             </table>
+           <table width="100%" cellpadding="3" cellspacing="3" align="center" style="border-left: #cccccc 1px solid;border-right: #cccccc 1px solid;border-bottom: #cccccc 1px solid;">
+  
+              <tr>
+                <td class="centerLcolumn" valign="top">
+                  <div class="centerLcolumn">
+              <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="TechKittinII/theme_center_left.html"}>
+                  <br />
+              <{/foreach}>
+              <!-- End center-left blocks loop -->
+                  </div>
+                </td>
+                <td class="centerRcolumn" valign="top">
+                  <div class="centerRcolumn">
+              <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="TechKittinII/theme_center_right.html"}>
+                  <br />
+              <{/foreach}>
+              <!-- End center-right blocks loop -->
+                  </div>
+   		        </td>
+             </tr>
+           </table>
+           <{/if}>
+            <!-- End display center blocks -->
+           <table width="100%" cellpadding="3" cellspacing="0" align="center">
+               <tr>
+                  <td class="centercolumn" valign="top" colspan="2">
+			  <div class="centercolumn">
+			        <!-- Start center-center blocks loop -->
+			      <{foreach item=block from=$xoops_ccblocks}>
+			      <{include file="TechKittinII/theme_center_center.html"}>
+			        <br />
+			      <{/foreach}>
+			        <!-- End center-center blocks loop -->
+			  </div>
+                  </td></tr>
+           </table>
+           <br />
+           </div>
+         <div class="content">
+           <{$xoops_contents}>
+         </div>
+         <div align="center"><br />
+  
+	     </div></td>
+         <{if $xoops_showrblock == 1}>
+         <td width="160" align="right" valign="top" class="rightcolumn"><div class="rightcolumn">
+        <!-- Start right blocks loop -->
+        <div align="left"><{foreach item=block from=$xoops_rblocks}>
+          <{include file="TechKittinII/theme_rightblock.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+         </div>
+         </div>
+         </td>
+<{else}><{/if}>
+   </tr>
+           <tr>
+          <td colspan="3">
+
+<{include file="TechKittinII/theme_footer.html"}>
+</td></tr></table>
+</body>
+</html>
